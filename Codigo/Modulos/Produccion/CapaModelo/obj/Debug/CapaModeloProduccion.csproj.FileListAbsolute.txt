@@ -1,0 +1,6 @@
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaModelo\bin\Debug\CapaModeloProduccion.dll
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaModelo\bin\Debug\CapaModeloProduccion.pdb
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaModelo\obj\Debug\CapaModeloProduccion.csproj.AssemblyReference.cache
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaModelo\obj\Debug\CapaModeloProduccion.csproj.CoreCompileInputs.cache
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaModelo\obj\Debug\CapaModeloProduccion.dll
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaModelo\obj\Debug\CapaModeloProduccion.pdb

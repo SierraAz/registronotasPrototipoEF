@@ -1,0 +1,72 @@
+-- CREAR TABLA DE ALUMNOS
+DROP TABLE IF EXISTS `alumnos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `alumnos` (
+  `id_alumno` int NOT NULL AUTO_INCREMENT,
+  `nombre_alumno` varchar(45) DEFAULT NULL,
+  `direccion_alumno` varchar(45) DEFAULT NULL,
+  `telefono_alumno` varchar(45) DEFAULT NULL,
+  `correo_alumno` varchar(45) DEFAULT NULL,
+  `estatus_alumno` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`id_alumno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+-- CREAR TABLA DE CURSOS
+DROP TABLE IF EXISTS `curso`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `curso` (
+  `id_curso` int NOT NULL AUTO_INCREMENT,
+  `nombre_curso` varchar(45) DEFAULT NULL,
+  `estatus_curso` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_curso`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+
+-- CREAR TABLA DE NOTAS EXAMENES
+DROP TABLE IF EXISTS `notas_examenes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `notas_examenes` (
+  `id_notas_examenes` int NOT NULL AUTO_INCREMENT,
+  `id_alumno_notas_examenes` int NOT NULL,
+  `id_curso_notas_examenes` int NOT NULL,
+  `calificacion_notas_examenes` int NOT NULL,
+  PRIMARY KEY (`id_notas_examenes`),
+  KEY `fk_id_alumno_idx` (`id_alumno_notas_examenes`),
+  KEY `fk_id_curso_idx` (`id_curso_notas_examenes`),
+  CONSTRAINT `fk_id_alumno` FOREIGN KEY (`id_alumno_notas_examenes`) REFERENCES `alumnos` (`id_alumno`),
+  CONSTRAINT `fk_id_curso` FOREIGN KEY (`id_curso_notas_examenes`) REFERENCES `curso` (`id_curso`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+-- Store procedure Notas(recetas agregar o editar)
+DROP procedure IF EXISTS `pa_produccion_ordenes_agregareditar`;
+DELIMITER $$
+CREATE PROCEDURE `pa_produccion_ordenes_agregareditar` (
+_id_notas_examenes int,
+_id_alumno_notas_examenes int,
+_id_curso_notas_examenes int,
+_calificacion_notas_examenes int
+)
+BEGIN
+if _id_notas_examenes = 0 then
+	insert into notas_examenes (id_alumno_notas_examenes,id_curso_notas_examenes,calificacion_notas_examenes)
+    values (_id_alumno_notas_examenes,_id_curso_notas_examenes,_calificacion_notas_examenes);
+else
+	update notas_examenes
+    set
+		id_alumno_notas_examenes = _id_alumno_notas_examenes,
+        id_curso_notas_examenes = _id_curso_notas_examenes,
+        calificacion_notas_examenes = _calificacion_notas_examenes;
+end if;
+
+END$$
+
+DELIMITER ;
