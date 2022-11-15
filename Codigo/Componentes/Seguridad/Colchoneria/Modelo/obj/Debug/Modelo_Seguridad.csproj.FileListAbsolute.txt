@@ -1,0 +1,6 @@
+C:\Users\analisis2\Desktop\navegador\proyectofinalasis222022\Codigo\Componentes\Seguridad\Colchoneria\Modelo\bin\Debug\Modelo_Seguridad.dll
+C:\Users\analisis2\Desktop\navegador\proyectofinalasis222022\Codigo\Componentes\Seguridad\Colchoneria\Modelo\bin\Debug\Modelo_Seguridad.pdb
+C:\Users\analisis2\Desktop\navegador\proyectofinalasis222022\Codigo\Componentes\Seguridad\Colchoneria\Modelo\obj\Debug\Modelo_Seguridad.csproj.AssemblyReference.cache
+C:\Users\analisis2\Desktop\navegador\proyectofinalasis222022\Codigo\Componentes\Seguridad\Colchoneria\Modelo\obj\Debug\Modelo_Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\analisis2\Desktop\navegador\proyectofinalasis222022\Codigo\Componentes\Seguridad\Colchoneria\Modelo\obj\Debug\Modelo_Seguridad.dll
+C:\Users\analisis2\Desktop\navegador\proyectofinalasis222022\Codigo\Componentes\Seguridad\Colchoneria\Modelo\obj\Debug\Modelo_Seguridad.pdb
