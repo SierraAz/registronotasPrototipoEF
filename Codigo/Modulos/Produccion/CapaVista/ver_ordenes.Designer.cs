@@ -132,7 +132,7 @@ namespace CapaVistaProduccion
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(568, 216);
             this.dataGridView1.TabIndex = 48;
-            this.dataGridView1.Tag = "tbl_ordenes";
+            this.dataGridView1.Tag = "notas_examenes";
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // navegador1

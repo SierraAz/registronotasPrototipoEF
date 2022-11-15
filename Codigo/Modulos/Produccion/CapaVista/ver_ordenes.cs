@@ -25,7 +25,7 @@ namespace CapaVistaProduccion
         private void navegador1_Load(object sender, EventArgs e)
         {
             NavegadorVista.Navegador.idApp = "1301";
-            TextBox[] Grupotextbox = { num_orden, num_receta, prioridadtxt};
+            TextBox[] Grupotextbox = { num_orden,fechacrea,num_receta, prioridadtxt};
             TextBox[] Idtextbox = { num_orden, num_receta };
             navegador1.textbox = Grupotextbox;
             navegador1.tabla = dataGridView1;

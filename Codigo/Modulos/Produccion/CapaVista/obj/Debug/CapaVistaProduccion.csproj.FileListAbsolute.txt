@@ -72,3 +72,5 @@ C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Pro
 C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaVista\bin\Debug\CapaControladorProduccion.dll
 C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaVista\bin\Debug\CapaControladorProduccion.pdb
 C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaVista\obj\Debug\CapaVistaProduccion.AbnerSierra090119375.resources
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaVista\obj\Debug\CapaVistaProduccion.ver_alumno.resources
+C:\Users\azael\Desktop\practica final\proyectofinalasis222022\Codigo\Modulos\Produccion\CapaVista\obj\Debug\CapaVistaProduccion.ver_curso.resources

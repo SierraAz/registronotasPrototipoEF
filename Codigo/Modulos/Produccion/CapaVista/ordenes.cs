@@ -14,8 +14,8 @@ namespace CapaVistaProduccion
 {
     public partial class ordenes : Form
     {
-        string connectionString = @"Server=colchoneria.mysql.database.azure.com;Database=colchoneria;Uid=administrador;Pwd=Jm123456;";
-        int pk_idordenes_tbl_ordenes = 0;
+        string connectionString = @"Server=localhost;Database=colchoneria;Uid=root;Pwd=root;";
+        int id_notas_examenes = 0;
         public ordenes()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace CapaVistaProduccion
         void Clear()
         {
             textBox2.Text = textBox3.Text = textBox1.Text = "";
-            pk_idordenes_tbl_ordenes = 0;
+            id_notas_examenes = 0;
 
         }
 
@@ -47,10 +47,10 @@ namespace CapaVistaProduccion
                 mysqlCon.Open();
                 MySqlCommand mySqlCmd = new MySqlCommand("pa_produccion_ordenes_agregareditar", mysqlCon);
                 mySqlCmd.CommandType = CommandType.StoredProcedure;
-                mySqlCmd.Parameters.AddWithValue("_pk_idordenes_tbl_ordenes", pk_idordenes_tbl_ordenes);
-                mySqlCmd.Parameters.AddWithValue("_fk_idrecetas_tbl_recetas", textBox1.Text.Trim());
-                mySqlCmd.Parameters.AddWithValue("_fk_idrecetas_tbl_recetas", textBox2.Text.Trim());
-                mySqlCmd.Parameters.AddWithValue("_prioridad_tbl_ordenes", textBox3.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_id_notas_examenes", id_notas_examenes);
+                mySqlCmd.Parameters.AddWithValue("_id_alumno_notas_examenes", textBox1.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_id_curso_notas_examenes", textBox2.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_calificacion_notas_examenes", textBox3.Text.Trim());
                 
                 mySqlCmd.ExecuteNonQuery();
 
@@ -69,6 +69,18 @@ namespace CapaVistaProduccion
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ver_alumno rep = new ver_alumno();
+            rep.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ver_curso rep = new ver_curso();
+            rep.Show();
         }
     }
 }

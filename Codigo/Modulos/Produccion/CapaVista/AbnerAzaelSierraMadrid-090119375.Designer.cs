@@ -135,10 +135,11 @@ namespace CapaVistaProduccion
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(0, 0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 22);
+            this.button3.Size = new System.Drawing.Size(250, 42);
             this.button3.TabIndex = 0;
-            this.button3.Text = "Seguridad";
+            this.button3.Text = "seguridad";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_2);
             // 
             // panel9
             // 

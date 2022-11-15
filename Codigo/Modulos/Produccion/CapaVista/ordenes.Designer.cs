@@ -38,6 +38,8 @@ namespace CapaVistaProduccion
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +66,7 @@ namespace CapaVistaProduccion
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
-            this.button3.Location = new System.Drawing.Point(366, 144);
+            this.button3.Location = new System.Drawing.Point(376, 146);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 61);
             this.button3.TabIndex = 37;
@@ -75,7 +77,7 @@ namespace CapaVistaProduccion
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
-            this.button2.Location = new System.Drawing.Point(285, 144);
+            this.button2.Location = new System.Drawing.Point(295, 146);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 61);
             this.button2.TabIndex = 36;
@@ -85,7 +87,7 @@ namespace CapaVistaProduccion
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 118);
+            this.textBox2.Location = new System.Drawing.Point(105, 120);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 26;
@@ -95,7 +97,7 @@ namespace CapaVistaProduccion
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.label3.Location = new System.Drawing.Point(231, 121);
+            this.label3.Location = new System.Drawing.Point(241, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 17);
             this.label3.TabIndex = 25;
@@ -105,7 +107,7 @@ namespace CapaVistaProduccion
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.label2.Location = new System.Drawing.Point(31, 118);
+            this.label2.Location = new System.Drawing.Point(20, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 17);
             this.label2.TabIndex = 24;
@@ -121,11 +123,31 @@ namespace CapaVistaProduccion
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(331, 121);
+            this.textBox3.Location = new System.Drawing.Point(341, 123);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 41;
             this.textBox3.Tag = "fk_idrecetas_tbl_recetas";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(222, 70);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 23);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "?";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(211, 120);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(25, 23);
+            this.button4.TabIndex = 43;
+            this.button4.Text = "?";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // ordenes
             // 
@@ -133,6 +155,8 @@ namespace CapaVistaProduccion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(138)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(453, 208);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -160,5 +184,7 @@ namespace CapaVistaProduccion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -16,14 +16,14 @@ namespace CapaVistaProduccion {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class reporte_recetas : ReportClass {
+    public class Reporte_notas : ReportClass {
         
-        public reporte_recetas() {
+        public Reporte_notas() {
         }
         
         public override string ResourceName {
             get {
-                return "reporte_recetas.rpt";
+                return "Reporte_notas.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaVistaProduccion {
         
         public override string FullResourceName {
             get {
-                return "CapaVistaProduccion.reporte_recetas.rpt";
+                return "CapaVistaProduccion.Reporte_notas.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace CapaVistaProduccion {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedreporte_recetas : Component, ICachedReport {
+    public class CachedReporte_notas : Component, ICachedReport {
         
-        public Cachedreporte_recetas() {
+        public CachedReporte_notas() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace CapaVistaProduccion {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            reporte_recetas rpt = new reporte_recetas();
+            Reporte_notas rpt = new Reporte_notas();
             rpt.Site = this.Site;
             return rpt;
         }
